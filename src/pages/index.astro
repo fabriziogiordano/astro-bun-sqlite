@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import { runQuery } from "../libs/db";
+
+const data = await runQuery();
+
+console.log(data);
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		Nothing here, check the log.
+	</main>
+</Layout>
+
